@@ -2349,60 +2349,75 @@ body.track-brother .stat-num{color:var(--sky);}
     </section>
 
     <!-- ================= APPLY / REGISTRATION ================= -->
-    <section class="page" id="page-apply">
-      <div class="section-wrap narrow">
-        <div class="eyebrow" data-lang="en">Registration</div>
-        <div class="eyebrow ar" data-lang="ar">التقديم</div>
-        <h2 class="anim-slide-up" data-lang="en">Apply to the academy</h2>
-        <h2 class="ar" data-lang="ar" dir="rtl">قدّم للأكاديمية</h2>
-        <p data-lang="en">Tell us a little about yourself. Your application is sent directly to the academy's email the moment you submit.</p>
-        <p class="ar" data-lang="ar" dir="rtl">أخبرنا قليلاً عن نفسك. يُرسل طلبك مباشرة إلى بريد الأكاديمية فور الإرسال.</p>
-        <form action="https://formsubmit.co/tadhkiratualakhirahacademy@gmail.com" method="POST" class="apply-form" data-formtype="Application" data-whatsapp="2349134520324">
-          <input type="hidden" name="_subject" value="New Academy Application">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <div class="form-grid" style="margin-top:24px">
-            <div class="field"><label data-lang="en">Full Name</label><label class="ar" data-lang="ar" dir="rtl">الاسم الكامل</label><input type="text" name="Full Name" required></div>
-            <div class="field"><label data-lang="en">Age</label><label class="ar" data-lang="ar" dir="rtl">العمر</label><input type="number" name="Age" min="5" max="100"></div>
-            <div class="field"><label data-lang="en">Sister / Brother</label><label class="ar" data-lang="ar" dir="rtl">أخت / أخ</label>
-              <select name="Category"><option>Sister</option><option>Brother</option></select>
-            </div>
-            <div class="field"><label data-lang="en">Marital Status</label><label class="ar" data-lang="ar" dir="rtl">الحالة الاجتماعية</label>
-              <select name="Marital Status"><option>Single</option><option>Married</option></select>
-            </div>
-            <div class="field"><label data-lang="en">Country</label><label class="ar" data-lang="ar" dir="rtl">الدولة</label><input type="text" name="Country" placeholder="e.g. Nigeria" required></div>
-            <div class="field"><label data-lang="en">State</label><label class="ar" data-lang="ar" dir="rtl">الولاية</label><input type="text" name="State" placeholder="e.g. Kwara"></div>
-            <div class="field"><label data-lang="en">Occupation</label><label class="ar" data-lang="ar" dir="rtl">المهنة</label><input type="text" name="Occupation" placeholder="Student, teacher, trader…"></div>
-            <div class="field"><label data-lang="en">WhatsApp Number</label><label class="ar" data-lang="ar" dir="rtl">رقم واتساب</label><input type="tel" name="WhatsApp" placeholder="+234…" required></div>
-            <div class="field"><label data-lang="en">Email</label><label class="ar" data-lang="ar" dir="rtl">البريد الإلكتروني</label><input type="email" name="Email" required></div>
-            <div class="field full">
-              <label data-lang="en">Preferred Subjects (choose all that interest you)</label><label class="ar" data-lang="ar" dir="rtl">المواد المفضلة (اختر ما يهمك)</label>
-              <div class="subject-check-grid">
-                <label class="subject-chip"><input type="checkbox" name="Subjects" value="Qur'an Memorisation"><span data-lang="en">Qur'an Memorisation</span><span class="ar" data-lang="ar" dir="rtl">حفظ القرآن</span></label>
-                <label class="subject-chip"><input type="checkbox" name="Subjects" value="Hadith"><span data-lang="en">Hadith</span><span class="ar" data-lang="ar" dir="rtl">الحديث</span></label>
-                <label class="subject-chip"><input type="checkbox" name="Subjects" value="Tafsir"><span data-lang="en">Tafsir</span><span class="ar" data-lang="ar" dir="rtl">التفسير</span></label>
-                <label class="subject-chip"><input type="checkbox" name="Subjects" value="Mutoon"><span data-lang="en">Mutoon</span><span class="ar" data-lang="ar" dir="rtl">المتون</span></label>
-                <label class="subject-chip"><input type="checkbox" name="Subjects" value="Arabic"><span data-lang="en">Arabic</span><span class="ar" data-lang="ar" dir="rtl">اللغة العربية</span></label>
-              </div>
-            </div>
-            <div class="field"><label data-lang="en">Current Level</label><label class="ar" data-lang="ar" dir="rtl">المستوى الحالي</label>
-              <select name="Level"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select>
-            </div>
-            <div class="field"><label data-lang="en">Can you read the Qur'an?</label><label class="ar" data-lang="ar" dir="rtl">هل تستطيع قراءة القرآن؟</label>
-              <select name="Can Read Quran"><option>Yes, fluently</option><option>Yes, with some difficulty</option><option>Learning to read (Nūrāniyyah stage)</option><option>Not yet</option></select>
-            </div>
-            <div class="field"><label data-lang="en">Portion of Qur'an Memorised</label><label class="ar" data-lang="ar" dir="rtl">مقدار المحفوظ من القرآن</label><input type="text" name="Portion Memorised" placeholder="e.g. Juz' Amma, or None yet"></div>
-            <div class="field full"><label data-lang="en">Anything else we should know?</label><label class="ar" data-lang="ar" dir="rtl">أي معلومة إضافية؟</label><textarea name="Notes"></textarea></div>
-          </div>
-          <button type="submit" class="btn btn-gold ripple" style="margin-top:22px" data-lang="en">Submit Application</button>
-          <button type="submit" class="btn btn-gold ripple ar" style="margin-top:22px" data-lang="ar" dir="rtl">إرسال الطلب</button>
-          <div class="form-success"><span data-lang="en">Application received — we'll be in touch on WhatsApp soon.</span><span class="ar" data-lang="ar" dir="rtl">تم استلام طلبك، سنتواصل معك عبر واتساب قريبًا.</span></div>
-          <p class="form-note" data-lang="en">Your application is sent to the academy's email, and a summary opens on WhatsApp for you to send directly too.</p>
-          <p class="form-note ar" data-lang="ar" dir="rtl">يُرسل طلبك إلى بريد الأكاديمية، كما يفتح ملخص عبر واتساب لترسله مباشرة أيضًا.</p>
-        </form>
-      </div>
-    </section>
+    
+<!-- ================= APPLY / REGISTRATION ================= -->
+<section class="page" id="page-apply">
+  <div class="section-wrap narrow">
+    <div class="eyebrow" data-lang="en">Registration</div>
+    <div class="eyebrow ar" data-lang="ar">التقديم</div>
+    <h2 class="anim-slide-up" data-lang="en">Apply to the academy</h2>
+    <h2 class="ar" data-lang="ar" dir="rtl">قدّم للأكاديمية</h2>
+    <p data-lang="en">Tell us a little about yourself. Your application opens on WhatsApp, ready to send to the Academy Director.</p>
+    <p class="ar" data-lang="ar" dir="rtl">أخبرنا قليلاً عن نفسك. سيُفتح طلبك على واتساب جاهزًا للإرسال إلى مدير الأكاديمية.</p>
 
+    <form id="applyForm" class="wa-apply-form" data-formtype="Application" data-whatsapp="2349134520324">
+      <div class="form-grid" style="margin-top:24px">
+        <div class="field"><label data-lang="en">Full Name</label><label class="ar" data-lang="ar" dir="rtl">الاسم الكامل</label><input type="text" name="Full Name" required></div>
+        <div class="field"><label data-lang="en">Age</label><label class="ar" data-lang="ar" dir="rtl">العمر</label><input type="number" name="Age" min="5" max="100"></div>
+        <div class="field"><label data-lang="en">Sister / Brother</label><label class="ar" data-lang="ar" dir="rtl">أخت / أخ</label>
+          <select name="Category"><option>Sister</option><option>Brother</option></select>
+        </div>
+        <div class="field"><label data-lang="en">Marital Status</label><label class="ar" data-lang="ar" dir="rtl">الحالة الاجتماعية</label>
+          <select name="Marital Status"><option>Single</option><option>Married</option></select>
+        </div>
+        <div class="field"><label data-lang="en">Country</label><label class="ar" data-lang="ar" dir="rtl">الدولة</label><input type="text" name="Country" placeholder="e.g. Nigeria" required></div>
+        <div class="field"><label data-lang="en">State</label><label class="ar" data-lang="ar" dir="rtl">الولاية</label><input type="text" name="State" placeholder="e.g. Kwara"></div>
+        <div class="field"><label data-lang="en">Occupation</label><label class="ar" data-lang="ar" dir="rtl">المهنة</label><input type="text" name="Occupation" placeholder="Student, teacher, trader…"></div>
+        <div class="field"><label data-lang="en">WhatsApp Number</label><label class="ar" data-lang="ar" dir="rtl">رقم واتساب</label><input type="tel" name="WhatsApp" placeholder="+234…" required></div>
+        <div class="field"><label data-lang="en">Email</label><label class="ar" data-lang="ar" dir="rtl">البريد الإلكتروني</label><input type="email" name="Email" required></div>
+
+        <div class="field full">
+          <label data-lang="en">Preferred Subjects (choose all that interest you)</label>
+          <label class="ar" data-lang="ar" dir="rtl">المواد المفضلة (اختر ما يهمك)</label>
+          <div class="subject-check-grid">
+            <label class="subject-chip"><input type="checkbox" name="Subjects" value="Qur'an Memorisation"><span data-lang="en">Qur'an Memorisation</span><span class="ar" data-lang="ar" dir="rtl">حفظ القرآن</span></label>
+            <label class="subject-chip"><input type="checkbox" name="Subjects" value="Hadith"><span data-lang="en">Hadith</span><span class="ar" data-lang="ar" dir="rtl">الحديث</span></label>
+            <label class="subject-chip"><input type="checkbox" name="Subjects" value="Tafsir"><span data-lang="en">Tafsir</span><span class="ar" data-lang="ar" dir="rtl">التفسير</span></label>
+            <label class="subject-chip"><input type="checkbox" name="Subjects" value="Mutoon"><span data-lang="en">Mutoon</span><span class="ar" data-lang="ar" dir="rtl">المتون</span></label>
+            <label class="subject-chip"><input type="checkbox" name="Subjects" value="Arabic"><span data-lang="en">Arabic</span><span class="ar" data-lang="ar" dir="rtl">اللغة العربية</span></label>
+          </div>
+        </div>
+
+        <div class="field"><label data-lang="en">Current Level</label><label class="ar" data-lang="ar" dir="rtl">المستوى الحالي</label>
+          <select name="Level"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select>
+        </div>
+        <div class="field"><label data-lang="en">Can you read the Qur'an?</label><label class="ar" data-lang="ar" dir="rtl">هل تستطيع قراءة القرآن؟</label>
+          <select name="Can Read Quran"><option>Yes, fluently</option><option>Yes, with some difficulty</option><option>Learning to read (Nūrāniyyah stage)</option><option>Not yet</option></select>
+        </div>
+        <div class="field"><label data-lang="en">Portion of Qur'an Memorised</label><label class="ar" data-lang="ar" dir="rtl">مقدار المحفوظ من القرآن</label><input type="text" name="Portion Memorised" placeholder="e.g. Juz' Amma, or None yet"></div>
+        <div class="field full"><label data-lang="en">Anything else we should know?</label><label class="ar" data-lang="ar" dir="rtl">أي معلومة إضافية؟</label><textarea name="Notes"></textarea></div>
+      </div>
+
+      <button type="submit" id="applySubmitBtn" class="btn btn-gold ripple btn-wide" style="margin-top:22px">
+        <span data-lang="en">Submit via WhatsApp</span>
+        <span class="ar" data-lang="ar" dir="rtl">إرسال عبر واتساب</span>
+      </button>
+
+      <div class="portal-error" id="applyError" style="margin-top:12px">
+        <span data-lang="en">Please fill in all required fields.</span>
+        <span class="ar" data-lang="ar" dir="rtl">يرجى تعبئة جميع الحقول المطلوبة.</span>
+      </div>
+
+      <div class="form-success">
+        <span data-lang="en">WhatsApp is opening — just tap Send to complete your application.</span>
+        <span class="ar" data-lang="ar" dir="rtl">يُفتح واتساب الآن، اضغط إرسال لإتمام طلبك.</span>
+      </div>
+
+      <p class="form-note" data-lang="en">A copy is also emailed to the Academy. If WhatsApp doesn't open, message us directly on +234 913 452 0324.</p>
+      <p class="form-note ar" data-lang="ar" dir="rtl">تُرسل نسخة أيضًا إلى بريد الأكاديمية. إن لم يفتح واتساب، راسلنا مباشرة على ‎+234 913 452 0324.</p>
+    </form>
+  </div>
+</section>
     <!-- ================= SUPPORT ================= -->
     <section class="page" id="page-support">
       <div class="section-wrap">
